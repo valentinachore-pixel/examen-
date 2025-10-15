@@ -1,0 +1,28 @@
+ñ:root{--azul:#0b74da;--gris:#6b7280;font-family:Inter,system-ui,sans-serif}
+body{margin:0;background:#f3f6fb url("../img/TAXIMATIEÑO.png") no-repeat center/500px fixed;color:#111}
+.container{max-width:900px;margin:20px auto;padding:18px;background:rgba(255,255,255,0.92);border-radius:10px}
+
+.header{display:flex;justify-content:space-between;align-items:center;gap:12px}
+.logo-left{display:flex;align-items:center;gap:10px}
+.logo-img{width:64px;height:auto;border-radius:50%}
+.sponsor-img{width:56px;height:auto;border-radius:8px;box-shadow:0 2px 6px #0002}
+
+.hero-img{display:block;margin:18px auto;width:60%;border-radius:10px;box-shadow:0 2px 8px #0003}
+
+.card{position:relative;background:#fff;padding:18px;border-radius:10px;overflow:hidden;box-shadow:0 2px 6px #0001}
+.card::before{content:"";position:absolute;inset:0;background:url("../img/LOGO.png") no-repeat center/200px;opacity:.05;pointer-events:none}
+.card form{position:relative;z-index:1}
+
+h1{margin:0;font-size:20px}
+.lead{margin:0;font-size:13px;color:var(--gris)}
+h2{margin:0 0 10px 0}
+
+.form-row{display:flex;gap:10px;margin-bottom:10px}
+.field{flex:1}
+label{font-size:13px;color:var(--gris);margin-bottom:4px;display:block}
+input,select{width:100%;padding:8px;border:1px solid #ccc;border-radius:6px}
+.btns{display:flex;gap:10px;margin-top:6px}
+button{padding:10px 12px;border-radius:6px;border:none;cursor:pointer}
+.primary{background:var(--azul);color:#fff}
+.ghost{background:#fff;border:1px solid #ccc}
+.fare{margin-top:10px;font-weight:700}

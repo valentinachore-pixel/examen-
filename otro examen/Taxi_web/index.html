@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Taximovil EL MATIEÑO</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+
+   <header class="header">
+      <div class="logo-left">
+        <img src="imagen/LOGO.png" alt="Logo" class="logo-img" />
+        <div>
+          <h1>Taximovil EL MATIEÑO</h1>
+          <p class="lead">Reserva rápida, tarifa clara</p>
+        </div>
+      </div>
+      <img src="imagen/images (2).jfif" alt="Patrocinador" class="sponsor-img" />
+    </header>
+
+   <section class="hero">
+      <img src="imagen/TAXIMATIEÑO.png" alt="Taxi Matieño" class="hero-img" />
+    </section>
+
+    <main>
+      <section class="card">
+        <h2>RESERVA TAXIMOVIL</h2>
+        <form id="bookingForm">
+          <div class="form-row">
+            <div class="field">
+              <label for="from">Origen</label>
+              <input id="from" type="text" required>
+            </div>
+            <div class="field">
+              <label for="to">Destino</label>
+              <input id="to" type="text" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="distance">Distancia (km)</label>
+              <input id="distance" type="number" required>
+            </div>
+            <div class="field">
+              <label for="vehicle">Tipo de vehículo</label>
+              <select id="vehicle">
+                <option value="standard">Standard</option>
+                <option value="comfort">Comfort</option>
+                <option value="van">Van</option>
+                <option value="premium">Premium</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="field">
+              <label for="datetime">Fecha y hora</label>
+              <input id="datetime" type="datetime-local" required>
+            </div>
+          </div>
+
+          <div class="btns">
+            <button type="button" id="calcBtn" class="ghost">Calcular tarifa</button>
+            <button type="submit" class="primary">Confirmar</button>
+          </div>
+
+          <div class="fare"><span id="farePrice">Bs. 0.00</span></div>
+        </form>
+      </section>
+    </main>
+
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
